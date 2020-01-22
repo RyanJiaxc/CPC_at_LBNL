@@ -1,0 +1,38 @@
+2019-08-18 19:09:23,591 - ===> loading train, validation and eval dataset
+2019-08-18 19:09:23,599 - ### Model summary below###
+ CDCK2(
+  (encoder): Sequential(
+    (0): Conv1d(1, 512, kernel_size=(10,), stride=(5,), padding=(3,), bias=False)
+    (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace)
+    (3): Conv1d(512, 512, kernel_size=(8,), stride=(5,), padding=(2,), bias=False)
+    (4): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace)
+    (6): Conv1d(512, 512, kernel_size=(4,), stride=(2,), padding=(1,), bias=False)
+    (7): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU(inplace)
+    (9): Conv1d(512, 512, kernel_size=(4,), stride=(2,), padding=(1,), bias=False)
+    (10): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (11): ReLU(inplace)
+  )
+  (gru): GRU(512, 256, batch_first=True)
+  (Wk): ModuleList(
+    (0): Linear(in_features=256, out_features=512, bias=True)
+    (1): Linear(in_features=256, out_features=512, bias=True)
+    (2): Linear(in_features=256, out_features=512, bias=True)
+    (3): Linear(in_features=256, out_features=512, bias=True)
+    (4): Linear(in_features=256, out_features=512, bias=True)
+    (5): Linear(in_features=256, out_features=512, bias=True)
+    (6): Linear(in_features=256, out_features=512, bias=True)
+    (7): Linear(in_features=256, out_features=512, bias=True)
+    (8): Linear(in_features=256, out_features=512, bias=True)
+    (9): Linear(in_features=256, out_features=512, bias=True)
+    (10): Linear(in_features=256, out_features=512, bias=True)
+    (11): Linear(in_features=256, out_features=512, bias=True)
+  )
+  (softmax): Softmax()
+  (lsoftmax): LogSoftmax()
+)
+
+2019-08-18 19:09:23,599 - ===> Model total parameter: 6373888
+
